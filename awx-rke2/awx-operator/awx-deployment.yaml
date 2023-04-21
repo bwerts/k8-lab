@@ -1,0 +1,17 @@
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+spec:
+  # service_type: LoadBalancer
+  ingress_type: ingress
+  ingress_class_name: nginx
+  hostname: awx.home.lab
+  postgres_storage_class: awx-postgres
+  postgres_data_path: /var/lib/postgresql/data/pgdata
+  postgres_storage_requirements:
+    requests:
+      storage: 40Gi
+  projects_persistence: true
+  projects_storage_class: awx-projects
+  projects_storage_size: 40Gi

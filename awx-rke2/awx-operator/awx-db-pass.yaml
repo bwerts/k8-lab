@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  database: 
+  host: 
+  password: 
+  port: 
+  type: 
+  username: 
+kind: Secret
+metadata:
+  name: awx-postgres-configuration
+  namespace: awx
+type: Opaque
