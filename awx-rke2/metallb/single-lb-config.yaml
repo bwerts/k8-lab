@@ -1,7 +1,7 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: ingress-lb
+  name: single-lb
   namespace: metallb-system
 spec:
   addresses:
